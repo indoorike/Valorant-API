@@ -40,7 +40,6 @@ agentNames.forEach(item => {
 })
 
 let currentAgent = {}
-
 let agentPicture = document.querySelector("#picture")
 let agentRole = document.querySelector("#role-name")
 let roleImage = document.querySelector("#role-img")
@@ -77,7 +76,6 @@ async function updateAbilities(name) {
     })
 }
 
-
 let abilityTriggers = document.querySelector(".button-container").querySelectorAll("button")
 let abilityTitle = document.querySelector(".ability-title")
 let abilityDescription = document.querySelector(".ability-bio")
@@ -89,21 +87,3 @@ abilityButtons.forEach(item => {
         event.target.style.backgroundColor = "rgb(255, 86, 86)"
     })
 })
-
-
-
-/*
-
-let abilityTitle = document.querySelector(".ability-title")
-function updateAbilityDescriptions(button) {
-    abilityTitle.innerText = currentAgent.abilities[button].displayName
-}
-
-
-
-document.querySelector(".button-container").querySelectorAll("button").forEach(item => {
-    item.addEventListener("click", (event) => {
-        console.log('clicked')
-        updateAbilityDescriptions(event.target.getAttribute("id"))
-    })
-})*/

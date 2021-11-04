@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'VALORANT';
-    src: url('/fonts/VALORANT-Regular.ttf') format('woff'),
+    src: url('../fonts/VALORANT-Regular.ttf') format('woff'),
         url('/fonts/VALORANT-Regular.woff') format('woff2'),
         url('/fonts/VALORANT-Regular.woff2') format('truetype');
     font-weight: normal;
