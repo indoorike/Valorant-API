@@ -1,0 +1,9 @@
+html {
+    font-family: 'Zen Antique Soft', serif;
+    font-weight: 900;
+    font-size: 100%;
+}
+
+html * {
+    margin: 0px;
+}

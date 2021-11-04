@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'VALORANT';
+    src: url('/fonts/VALORANT-Regular.ttf') format('woff'),
+        url('/fonts/VALORANT-Regular.woff') format('woff2'),
+        url('/fonts/VALORANT-Regular.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+

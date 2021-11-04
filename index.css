@@ -1,0 +1,65 @@
+@import "general.css";
+@import "fonts.css";
+@import "body.css";
+
+header {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    align-content:start;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+header * {
+    padding-top: 1rem;
+}
+
+header nav {
+    font-size: 0.7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 8rem;
+    padding-top: 0px;
+    justify-content:flex-start;
+}
+
+header button {
+    width: 9rem;
+    height: 2.5rem;
+    margin-right: 2rem;
+    padding: 0.8rem 2.2rem;
+    align-self: center;
+    background-color: rgb(255, 86, 86);
+    color: white;
+    font-size: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    padding-top: 0px;
+}
+
+
+header li {
+    padding: 0px;
+    list-style: none;
+
+
+}
+
+
