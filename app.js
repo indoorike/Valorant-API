@@ -11,6 +11,9 @@ nameBox.addEventListener("mousedown", (event) => {
     mousedown = true
     start = event.clientY - nameBox.offsetTop
 })
+document.addEventListener("mouseup", () => {
+    mousedown = false
+})
 
 nameBox.addEventListener("mousemove" , (event) => {
     if (mousedown) {
@@ -18,17 +21,11 @@ nameBox.addEventListener("mousemove" , (event) => {
         nameBox.style.top = `${event.clientY - start}px`
         if (parseInt(nameBox.style.top) > 0) {
             nameBox.style.top = '0px'
-            
         } else if (parseInt(nameBox.style.top) < -850) {
             nameBox.style.top = '-850px'
         }
     }
 })
-document.addEventListener("mouseup", () => {
-    mousedown = false
-})
-
-
 agentNames.forEach(item => {
     item.addEventListener('click', () => {
         updateAgent(item.getAttribute("class"))
@@ -48,12 +45,9 @@ let agentDescription = document.querySelector("#description")
 async function updateAgent(name){
     let response = await fetch(url)
     let data = await response.json()
-
-    console.log(data.data)
     await data.data.forEach(item => {
         if (item.displayName === name) {
             currentAgent = item
-            console.log(currentAgent)
             agentPicture.src = item.fullPortrait
             agentRole.innerText = item.role.displayName.toUpperCase()
             roleImage.src = item.role.displayIcon
